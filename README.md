@@ -3,3 +3,6 @@ This project is for sharing with other java learners. all contents (Design, imag
 The idea from this Project is to share it with the other students from One Million Arab Coders.
 Feel free to download or modify the code of the App.
 
+Please refer to README2.md for more informations.
+
+All Rights belongs to Udacity, Inc.
