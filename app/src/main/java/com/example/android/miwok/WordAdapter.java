@@ -79,6 +79,16 @@ public class WordAdapter extends ArrayAdapter<Word> {
                 MediaPlayer mediaPlayer = MediaPlayer.create(mcontext, currentWord.getAudioSourceId());
                 mediaPlayer.start();
 
+                mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mediaPlayer) {
+                        if (mediaPlayer!=null){
+                            mediaPlayer.release();
+                            mediaPlayer = null;
+                        }
+                    }
+                });
+
             }
         });
         // Return the whole list item layout (containing 2 TextViews and an ImageView)
