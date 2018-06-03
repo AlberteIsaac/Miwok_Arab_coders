@@ -73,7 +73,8 @@ public class WordAdapter extends ArrayAdapter<Word> {
         textContainer.setBackgroundColor(color);
         RelativeLayout playImageParent = (RelativeLayout) listItemView.findViewById(R.id.play_image_parent);
         playImageParent.setBackgroundColor(color);
-        listItemView.setOnClickListener(new View.OnClickListener() {
+
+       /* listItemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 MediaPlayer mediaPlayer = MediaPlayer.create(mcontext, currentWord.getAudioSourceId());
@@ -90,7 +91,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
                 });
 
             }
-        });
+        });*/
         // Return the whole list item layout (containing 2 TextViews and an ImageView)
         // so that it can be shown in the ListView*/
         return listItemView;
