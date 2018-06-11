@@ -6,6 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".FamilyMembersActivity">
+    tools:context=".FamilyMembersActivity"
+
+    android:drawSelectorOnTop="true">
 
 </ListView>
